@@ -10,13 +10,15 @@ player1 = {
     x = 0,
     y = (WINDOW_SIZE.VIRTUAL_WIDTH / 2) - (38 / 2),
     thickness = 2,
-    height = 38
+    height = 38,
+    speed = 200
 }
 player2 = {
     x = WINDOW_SIZE.VIRTUAL_WIDTH - (2),
     y = (WINDOW_SIZE.VIRTUAL_HEIGHT / 2) - (38 / 2),
     thickness = 2,
-    height = 38
+    height = 38,
+    speed = 200
 }
 
 function love.load()
@@ -28,6 +30,17 @@ function love.load()
     })
 end
 function love.update(dt)
+    -- player 1 movement
+    local player1MovementDirection = 0
+    if(love.keyboard.isDown('w')) then player1MovementDirection = -1 end
+    if(love.keyboard.isDown('s')) then player1MovementDirection = 1 end
+    player1.y = player1.y + ((player1.speed * dt) * player1MovementDirection)
+    
+    -- player 2 movement
+    local player2MovementDirection = 0
+    if(love.keyboard.isDown('up')) then player2MovementDirection = -1 end
+    if(love.keyboard.isDown('down')) then player2MovementDirection = 1 end
+    player2.y = player2.y + ((player2.speed * dt) * player2MovementDirection)
 end
 function love.draw()
     love.graphics.setBackgroundColor(40, 40, 40, 255)
