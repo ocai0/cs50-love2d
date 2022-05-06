@@ -36,5 +36,4 @@ function Paddle:setUpKey(key)
     self.key.up = key
 end
 
-
 return Paddle
