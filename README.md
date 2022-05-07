@@ -1,13 +1,5 @@
-## Falling in LÖVE with Lua
+## CS50’s Introduction to Game Development
 
-Projeto dedicado ao 'workshop' CS50 que pode ser encontrado [neste link]()
+This repo contains the code that was developed during the CS50 - Introduction to Game Development by Harvard. The ideia here is to track the evolution of the code and make it shareable to everyone.
 
-Cada projeto possui um **README** próprio, para você poder entender mais sobre o projeto e o que ele pretende fazer.
-A estrutura é a seuguinte: 
- 
- - *original/* : O resultado ao seguir o que está sendo mostrado no vídeo, sem muitas alterações.
- - *my-take/* : Uma outra forma de chegar ao mesmo resultado. Aqui eu vou fazer o que eu achar mais interessante para o projeto. *Se esta pasta não existir, significa que eu não encontrei algo muito interessante para mudar ou era alguma coisa muito pequena.*
-
- ## Projetos:
-
- - 
+The course can be founded [here](https://cs50.harvard.edu/games/2018/)
